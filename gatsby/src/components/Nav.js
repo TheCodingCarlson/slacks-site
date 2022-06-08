@@ -3,10 +3,6 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const NavStyles = styled.nav`
-  .logo {
-    transform: translateY(-25%);
-  }
-
   ul {
     margin: 0;
     margin-top: -6rem;

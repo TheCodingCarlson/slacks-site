@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import 'normalize.css';
 
 import Nav from './Nav';
+import Footer from './Footer';
 
 import GlobalStyles from '../styles/GlobalStyles';
 
@@ -35,6 +36,7 @@ export default function Layout({ children }) {
         <ContentStyles>
           <Nav />
           {children}
+          <Footer />
         </ContentStyles>
       </SiteBorderStyles>
     </>
