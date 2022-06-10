@@ -5,19 +5,17 @@ import styled from 'styled-components';
 const NavStyles = styled.nav`
   ul {
     margin: 0;
-    margin-top: -6rem;
     padding: 0;
     text-align: center;
     list-style: none;
 
     display: grid;
-    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2rem;
     align-items: center;
   }
 
   a {
-    font-size: 3rem;
     text-decoration: none;
   }
 `;

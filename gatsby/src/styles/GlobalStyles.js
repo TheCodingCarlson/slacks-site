@@ -19,11 +19,6 @@ const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
   }
 
-  fieldset {
-    border-color: rgba(0,0,0,0.1);
-    border-width: 1px;
-  }
-
   button {
     background: var(--red);
     color: white;
@@ -66,20 +61,8 @@ const GlobalStyles = createGlobalStyle`
     border: 3px solid var(--white);
   }
 
-  hr {
-    border: 0;
-    height: 8px;
-    background-size: 1500px;
-  }
-
   img {
     max-width: 100%;
-  }
-
-  .tilt {
-    transform: rotate(-2deg);
-    position: relative;
-    display: inline-block;
   }
 
   .hide {
