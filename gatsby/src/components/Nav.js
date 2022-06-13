@@ -20,23 +20,23 @@ const NavStyles = styled.nav`
   }
 `;
 
-export default function Nav() {
-  return (
-    <NavStyles>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about/">About</Link>
-        </li>
-        <li>
-          <Link to="/gigs/">Gigs</Link>
-        </li>
-        <li>
-          <Link to="/contact/">Contact</Link>
-        </li>
-      </ul>
-    </NavStyles>
-  );
-}
+const Nav = () => (
+  <NavStyles>
+    <ul>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/about/">About</Link>
+      </li>
+      <li>
+        <Link to="/gigs/">Gigs</Link>
+      </li>
+      <li>
+        <Link to="/contact/">Contact</Link>
+      </li>
+    </ul>
+  </NavStyles>
+);
+
+export default Nav;

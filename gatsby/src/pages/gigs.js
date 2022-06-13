@@ -1,9 +1,5 @@
 import React from 'react';
 
-export default function GigsPage() {
-  return (
-    <>
-      <h1>Gigs Page</h1>
-    </>
-  );
-}
+const GigsPage = () => <h1>Gigs Page</h1>;
+
+export default GigsPage;
