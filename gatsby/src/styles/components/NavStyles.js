@@ -39,5 +39,9 @@ const NavStyles = styled.nav`
     color: var(--orange);
     text-decoration: underline;
   }
+
+  a {
+    padding: 0.6rem 1rem;
+  }
 `;
 export default NavStyles;
