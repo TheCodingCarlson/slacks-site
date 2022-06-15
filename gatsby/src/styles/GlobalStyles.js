@@ -1,12 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
+// Fonts
+import '@fontsource/varela-round';
+import '@fontsource/ribeye';
+
 const GlobalStyles = createGlobalStyle`
   :root {
-    --red: #FF4949;
-    --black: #2E2E2E;
-    --yellow: #ffc600;
-    --white: #fff;
+    --orange: #e7942f;
+    --white: #fdfff5;
     --grey: #efefef;
+    --purple: #1C0136;
   }
 
   html {
@@ -16,29 +19,56 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    background: var(--purple);
+    color: var(--white);
+    font-family: "Varela Round", sans-serif;
     font-size: 2rem;
   }
 
   button {
-    background: var(--red);
-    color: white;
+    background: transparent;
+    color: var(--white);
     border: 0;
     padding: 0.6rem 1rem;
-    border-radius: 2px;
     cursor: pointer;
-    --cast: 2px;
-    box-shadow: var(--cast) var(--cast) 0 var(--grey);
-    text-shadow: 0.5px 0.5px 0 rgba(0,0,0,0.2);
-    transition: all 0.2s;
+  }
+
+  a {
+    color: var(--white);
+    text-decoration: none;
 
     &:hover {
-      --cast: 4px;
+      color: var(--orange);
+      text-decoration: underline;
     }
   }
 
   .gatsby-image-wrapper img[src*=base64\\,] {
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+    color: var(--orange);
+    font-family: "Ribeye", cursive;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .content-section {
+    margin: 4rem 0;
   }
 
   /* Scrollbar Styles */
@@ -48,7 +78,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     scrollbar-width: thin;
-    scrollbar-color: var(--red) var(--white);
+    scrollbar-color: var(--orange) var(--white);
   }
 
   body::-webkit-scrollbar-track {
@@ -56,17 +86,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: var(--red) ;
+    background-color: var(--orange) ;
     border-radius: 6px;
     border: 3px solid var(--white);
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  .hide {
-    display: none !important;
   }
 `;
 

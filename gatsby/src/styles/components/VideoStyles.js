@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const VideoStyles = styled.div`
+  border: 10px solid #941892;
+  border-radius: 5px;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;

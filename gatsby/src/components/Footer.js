@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer>
+  <footer className="center">
     <p>&copy; The Slacks {new Date().getFullYear()}</p>
   </footer>
 );
