@@ -48,8 +48,8 @@ const GlobalStyles = createGlobalStyle`
     image-rendering: pixelated;
   }
 
-  h1 {
-    font-size: 3rem !important;
+  .header {
+    font-size: 2.5rem;
     color: var(--orange);
     font-family: "Ribeye", cursive;
     text-align: center;
@@ -65,6 +65,14 @@ const GlobalStyles = createGlobalStyle`
 
   .center {
     text-align: center;
+  }
+
+  .text-medium {
+    font-size: 1.75rem;
+  }
+
+  .text-orange {
+    color: var(--orange);
   }
 
   .content-section {
