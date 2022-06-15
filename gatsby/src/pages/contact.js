@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import useForm from '../utils/useForm';
 import ContactFormStyles from '../styles/pages/ContactPageStyles';
 
@@ -13,6 +14,7 @@ export default function ContactPage() {
   return (
     <>
       <h1>Contact Page</h1>
+      <Link to="/">Home</Link>
       <ContactFormStyles>
         <fieldset>
           <legend>Your Info</legend>

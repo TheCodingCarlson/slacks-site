@@ -6,6 +6,8 @@
   "author": "Chris Carlson",
   "license": "MIT",
   "dependencies": {
+    "@fontsource/ribeye": "^4.5.9",
+    "@fontsource/varela-round": "^4.5.8",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.16.0",
     "gatsby-plugin-gatsby-cloud": "^4.16.0",
