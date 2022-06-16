@@ -5,10 +5,14 @@ const GigListStyles = styled.ul``;
 
 const Gig = ({ date, venue, cityState, isPrivate = false }) => (
   <li>
-    <span className="">{date}</span>
-    <span className="">{venue}</span>
-    <span className="">{cityState}</span>
-    {isPrivate ? <span className="">Private</span> : <span>Public</span>}
+    <span className="date">{date}</span>
+    <span className="venue">{venue}</span>
+    <span className="city-state">{cityState}</span>
+    {isPrivate ? (
+      <span className="gig-type">Private</span>
+    ) : (
+      <span>Public</span>
+    )}
   </li>
 );
 

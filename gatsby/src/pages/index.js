@@ -5,9 +5,27 @@ import Nav from '../components/Nav';
 import SiteHeader from '../components/SiteHeader';
 import Video from '../components/Video';
 
+export const pageQuery = graphql`
+  query ImagesForGallery {
+    allFile(filter: { relativeDirectory: { eq: "gallery" } }) {
+      edges {
+        node {
+          childImageSharp {
+            thumb: gatsbyImageData(
+              width: 270
+              height: 270
+              placeholder: BLURRED
+            )
+            full: gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
+      }
+    }
+  }
+`;
+
 const HomePage = ({ data }) => {
   const images = data.allFile.edges.map(({ node }) => node.childImageSharp);
-  console.log(images);
   return (
     <>
       <SiteHeader />
@@ -110,24 +128,5 @@ const HomePage = ({ data }) => {
     </>
   );
 };
-
-export const pageQuery = graphql`
-  query ImagesForGallery {
-    allFile(filter: { relativeDirectory: { eq: "gallery" } }) {
-      edges {
-        node {
-          childImageSharp {
-            thumb: gatsbyImageData(
-              width: 270
-              height: 270
-              placeholder: BLURRED
-            )
-            full: gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-      }
-    }
-  }
-`;
 
 export default HomePage;
