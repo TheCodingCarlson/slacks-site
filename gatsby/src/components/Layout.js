@@ -7,7 +7,7 @@ import Footer from './Footer';
 import GlobalStyles from '../styles/GlobalStyles';
 
 const SiteStyles = styled.div`
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
   padding: 5px;
 
