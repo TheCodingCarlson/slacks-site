@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `The Slacks`,
-    description: `The website for The Slacks band located in Seattle, WA`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `THE SLACKS is the hottest cover band on Gigmasters! We deliver tons of energy, high-quality musicianship, 5-part vocals and professionalism to any event requiring soulful jams performed by dapper gentleman!`,
+    siteUrl: `https://slackssitemaster.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -27,7 +27,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-styled-components`,

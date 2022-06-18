@@ -58,7 +58,7 @@ const ContactUsForm = () => {
         />
       </fieldset>
       <fieldset>
-        <legend>Tell us more about what your event</legend>
+        <label htmlFor="message">Tell us more about what your event</label>
         <textarea
           id="message"
           name="message"

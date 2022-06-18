@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import 'normalize.css';
 
 import Footer from './Footer';
+import SEO from './SEO';
 
 import GlobalStyles from '../styles/GlobalStyles';
 
@@ -24,6 +25,7 @@ const ContentStyles = styled.div`
 export default function Layout({ children }) {
   return (
     <>
+      <SEO />
       <GlobalStyles />
       <SiteStyles>
         <ContentStyles>

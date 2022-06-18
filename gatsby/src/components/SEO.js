@@ -15,9 +15,9 @@ const SEO = ({ children, location, description, title, image }) => {
   `);
 
   return (
-    <Helmet titleTemplate={`%s - ${site.siteMetadata.title}`}>
+    <Helmet>
       <html lang="en" />
-      <title>{title}</title>
+      <title>{site.siteMetadata.title}</title>
       {/* Fav Icons */}
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       <link rel="alternate icon" href="/favicon.ico" />
@@ -28,7 +28,11 @@ const SEO = ({ children, location, description, title, image }) => {
       {/* Open Graph */}
       {location && <meta property="og:url" content={location.href} />}
       {/* <meta property="og:image" content={image || '/logo.svg'} /> */}
-      <meta property="og:title" content={title} key="ogtitle" />
+      <meta
+        property="og:title"
+        content={site.siteMetadata.title}
+        key="ogtitle"
+      />
       <meta
         property="og:site_name"
         content={site.siteMetadata.title}

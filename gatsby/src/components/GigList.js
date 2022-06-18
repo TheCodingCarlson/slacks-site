@@ -21,8 +21,6 @@ const GigListStyles = styled.ul`
 
 const Gig = ({ gig }) => {
   const date = new Date(gig.date);
-  console.log(date);
-
   return (
     <li className={hasDatePassed(date) ? 'past-gig' : null}>
       <span className="date">{`${

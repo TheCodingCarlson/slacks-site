@@ -9,7 +9,7 @@ const SiteHeaderStyles = styled.div`
 
 const SiteHeader = () => (
   <SiteHeaderStyles id="header">
-    <StaticImage src="../assets/images/site-header.png" alt="The Slacks band" />
+    <StaticImage src="../images/site-header.png" alt="The Slacks band" />
   </SiteHeaderStyles>
 );
 

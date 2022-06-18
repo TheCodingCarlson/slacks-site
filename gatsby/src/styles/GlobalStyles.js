@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --white: #fdfff5;
     --grey: #efefef;
     --purple: #1C0136;
+    --violet: #941892;
   }
 
   html {
@@ -67,17 +68,18 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .button {
-    background: var(--orange);
+    background: var(--violet);
     color: var(--white);
     border: 2px solid transparent;
     border-radius: 5px;
     transition: all 0.2s;
+    padding: 0.75rem 1rem;
 
     &:hover,
     &:focus {
-      color: var(--orange);
+      color: var(--violet);
       background: var(--white);
-      border: 2px solid var(--orange);
+      border: 2px solid var(--violet);
     }
   }
 
