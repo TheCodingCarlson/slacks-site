@@ -1,0 +1,28 @@
+[
+  {
+    "date": "2022-07-13 PST",
+    "venue": "Music in Park",
+    "cityState": "Brier, WA",
+    "isPrivate": false,
+    "eventUrl": "http://ci.brier.wa.us/cityhall/events.htm"
+  },
+  {
+    "date": "2022-06-25 PST",
+    "venue": "The Landing",
+    "cityState": "Renton, WA",
+    "isPrivate": false,
+    "eventUrl": "https://thelandinginrenton.com/events/the-landing-in-renton-wine-brews-event"
+  },
+  {
+    "date": "2022-02-19 PST",
+    "venue": "The Brick",
+    "cityState": "Roslyn, WA",
+    "isPrivate": false
+  },
+  {
+    "date": "2021-10-31 PST",
+    "venue": "The Brick",
+    "cityState": "Roslyn, WA",
+    "isPrivate": false
+  }
+]

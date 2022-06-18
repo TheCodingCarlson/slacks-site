@@ -8,7 +8,7 @@ const SiteHeaderStyles = styled.div`
 `;
 
 const SiteHeader = () => (
-  <SiteHeaderStyles>
+  <SiteHeaderStyles id="header">
     <StaticImage src="../assets/images/site-header.png" alt="The Slacks band" />
   </SiteHeaderStyles>
 );

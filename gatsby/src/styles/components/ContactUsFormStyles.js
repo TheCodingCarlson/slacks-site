@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ContactFormStyles = styled.form`
+const ContactUsFormStyles = styled.form`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -28,15 +28,7 @@ const ContactFormStyles = styled.form`
     label + label {
       margin-top: 1rem;
     }
-
-    button {
-      background: var(--orange);
-      color: var(--white);
-      border: 2px sold var(--orange);
-      border-radius: 5px;
-      transition: all 0.2s;
-    }
   }
 `;
 
-export default ContactFormStyles;
+export default ContactUsFormStyles;

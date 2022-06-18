@@ -3,9 +3,7 @@ import styled from 'styled-components';
 const NavStyles = styled.nav`
   ul {
     margin: 2rem 0;
-    padding: 0;
     text-align: center;
-    list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +23,6 @@ const NavStyles = styled.nav`
     }
   }
 
-  a,
   button {
     transition: all 0.5s ease-in-out;
     opacity: 0.9;
@@ -39,9 +36,6 @@ const NavStyles = styled.nav`
     color: var(--orange);
     text-decoration: underline;
   }
-
-  a {
-    padding: 0.6rem 1rem;
-  }
 `;
+
 export default NavStyles;
