@@ -19,8 +19,7 @@ const SEO = ({ children, location, description, title, image }) => {
       <html lang="en" />
       <title>{site.siteMetadata.title}</title>
       {/* Fav Icons */}
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      <link rel="alternate icon" href="/favicon.ico" />
+      <link rel="icon" type="" href="/favicon.png" />
       {/* Meta Tags */}
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta charSet="utf-8" />
