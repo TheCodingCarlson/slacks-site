@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import NavStyles from '../styles/components/NavStyles';
 
@@ -32,7 +31,9 @@ const Nav = () => (
         </button>
       </li>
       <li>
-        <Link to="/contact/">Contact Us</Link>
+        <button type="button" onClick={() => scrollTo('#contact-us')}>
+          Contact Us
+        </button>
       </li>
     </ul>
   </NavStyles>

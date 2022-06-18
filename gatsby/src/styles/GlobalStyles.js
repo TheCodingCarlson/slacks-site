@@ -53,10 +53,32 @@ const GlobalStyles = createGlobalStyle`
     color: var(--orange);
     font-family: "Ribeye", cursive;
     text-align: center;
+    margin: 4rem 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   img {
     max-width: 100%;
+  }
+
+  .button {
+    background: var(--orange);
+    color: var(--white);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus {
+      color: var(--orange);
+      background: var(--white);
+      border: 2px solid var(--orange);
+    }
   }
 
   .hide {
@@ -69,10 +91,6 @@ const GlobalStyles = createGlobalStyle`
 
   .text-medium {
     font-size: 1.75rem;
-  }
-
-  .text-orange {
-    color: var(--orange);
   }
 
   .content-section {

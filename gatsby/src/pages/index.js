@@ -1,9 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Gallery from '@browniebroke/gatsby-image-gallery';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import Nav from '../components/Nav';
 import SiteHeader from '../components/SiteHeader';
 import Video from '../components/Video';
+import ContactUsForm from '../components/ContactUsForm';
+import GigList from '../components/GigList';
+
+// Gig Data
+import Gigs from '../../content/gigs.json';
 
 export const pageQuery = graphql`
   query ImagesForGallery {
@@ -63,6 +69,15 @@ const HomePage = ({ data }) => {
         <p className="text-medium">
           Book The Slacks for your next event, you will not be disappointed!!!
         </p>
+        <p>
+          <button
+            className="button"
+            type="button"
+            onClick={() => scrollTo('#songs')}
+          >
+            Contact Us Now For Booking!
+          </button>
+        </p>
       </div>
       <div id="photos" className="content-section">
         <h1 className="header">Photos</h1>
@@ -70,6 +85,7 @@ const HomePage = ({ data }) => {
       </div>
       <div id="shows" className="content-section">
         <h1 className="header">Shows</h1>
+        <GigList gigs={Gigs} />
       </div>
       <div id="songs" className="content-section">
         <h1 className="header">Song List</h1>
@@ -112,7 +128,7 @@ const HomePage = ({ data }) => {
       </div>
       <div id="partners" className="content-section">
         <h1 className="header">Corporate Partners</h1>
-        <p className="text-medium text-orange center">
+        <p className="text-medium center">
           ♦ American Cancer Society ♦ Bear Creek Country Club ♦ Bella Luna Farms
           ♦ Bellingham Golf Club ♦ Chateau St. Michelle Winery ♦ City of
           Leavenworth ♦ City of Longview ♦ City of Redmond ♦ City of Seattle ♦
@@ -124,6 +140,10 @@ const HomePage = ({ data }) => {
           Tavern ♦ US Navy Beer Crawl 2010-2013 ♦ US Navy Officer's Ball ♦ West
           Coast Entertainment ♦
         </p>
+      </div>
+      <div id="contact-us" className="content-section">
+        <h1 className="header">Contact Us</h1>
+        <ContactUsForm />
       </div>
     </>
   );
