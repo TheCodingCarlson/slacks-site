@@ -8,11 +8,13 @@ const ContactUsForm = () => {
     email: '',
     message: '',
     phone: '',
-    mapleSyrup: '',
   });
 
   return (
-    <ContactUsFormStyles>
+    <ContactUsFormStyles
+      method="post"
+      action={process.env.GETFORM_API_ENDPOINT}
+    >
       <fieldset>
         <label htmlFor="name">
           Name
@@ -22,6 +24,7 @@ const ContactUsForm = () => {
             name="name"
             value={values.name}
             onChange={updateValue}
+            required
           />
         </label>
       </fieldset>
@@ -34,6 +37,7 @@ const ContactUsForm = () => {
             name="email"
             value={values.email}
             onChange={updateValue}
+            required
           />
         </label>
       </fieldset>
@@ -46,16 +50,9 @@ const ContactUsForm = () => {
             name="phone"
             value={values.phone}
             onChange={updateValue}
+            placeholder="Optional"
           />
         </label>
-      </fieldset>
-      <fieldset className="hide">
-        <input
-          type="text"
-          name="mapleSyrup"
-          value={values.mapleSyrup}
-          onChange={updateValue}
-        />
       </fieldset>
       <fieldset>
         <label htmlFor="message">Tell us more about what your event</label>
@@ -64,6 +61,7 @@ const ContactUsForm = () => {
           name="message"
           value={values.message}
           onChange={updateValue}
+          required
         />
       </fieldset>
       <fieldset>

@@ -10,6 +10,7 @@
     "@fontsource/ribeye": "^4.5.9",
     "@fontsource/varela-round": "^4.5.8",
     "babel-plugin-styled-components": "^2.0.7",
+    "dotenv": "^16.0.1",
     "gatsby": "^4.16.0",
     "gatsby-plugin-gatsby-cloud": "^4.16.0",
     "gatsby-plugin-image": "^2.16.1",
