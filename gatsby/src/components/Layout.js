@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import 'normalize.css';
+import { Helmet } from 'react-helmet';
 
 import Footer from './Footer';
 import SEO from './SEO';
@@ -25,6 +26,19 @@ const ContentStyles = styled.div`
 export default function Layout({ children }) {
   return (
     <>
+      <Helmet>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charset="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+      </Helmet>
       <SEO />
       <GlobalStyles />
       <SiteStyles>
