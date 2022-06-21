@@ -7,9 +7,12 @@ import SiteHeader from '../components/SiteHeader';
 import Video from '../components/Video';
 import ContactUsForm from '../components/ContactUsForm';
 import GigList from '../components/GigList';
+import QuoteCarousel from '../components/QuoteCarousel';
 
 // Gig Data
 import Gigs from '../../content/gigs.json';
+// Quote Data
+import Quotes from '../../content/quotes.json';
 
 export const pageQuery = graphql`
   query ImagesForGallery {
@@ -34,6 +37,7 @@ const HomePage = ({ data }) => {
   const images = data.allFile.edges.map(({ node }) => node.childImageSharp);
   return (
     <>
+      <QuoteCarousel quotes={Quotes} />
       <SiteHeader />
       <Nav />
       <div className="content-section">
@@ -73,7 +77,7 @@ const HomePage = ({ data }) => {
           <button
             className="button"
             type="button"
-            onClick={() => scrollTo('#songs')}
+            onClick={() => scrollTo('#contact-us')}
           >
             Contact Us Now For Booking!
           </button>
