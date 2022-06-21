@@ -4,6 +4,9 @@ import { createGlobalStyle } from 'styled-components';
 import '@fontsource/varela-round';
 import '@fontsource/ribeye';
 
+// React Lite YouTube Embed Styles
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
+
 const GlobalStyles = createGlobalStyle`
   :root {
     --orange: #e7942f;
@@ -97,6 +100,12 @@ const GlobalStyles = createGlobalStyle`
 
   .content-section {
     margin: 4rem 0;
+  }
+
+  // iframe border
+  .yt-lite {
+    border: 10px solid var(--violet);
+    border-radius: 5px;
   }
 
   /* Scrollbar Styles */

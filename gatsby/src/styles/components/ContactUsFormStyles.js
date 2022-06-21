@@ -7,7 +7,7 @@ const ContactUsFormStyles = styled.form`
 
   textarea {
     min-height: 300px;
-    min-width: 100%;
+    width: 100%;
   }
 
   fieldset {

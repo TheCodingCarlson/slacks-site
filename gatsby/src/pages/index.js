@@ -1,10 +1,14 @@
 import React from 'react';
+
+// Third Party Libraries
 import { graphql } from 'gatsby';
 import Gallery from '@browniebroke/gatsby-image-gallery';
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+
+// Components
 import Nav from '../components/Nav';
 import SiteHeader from '../components/SiteHeader';
-import Video from '../components/Video';
 import ContactUsForm from '../components/ContactUsForm';
 import GigList from '../components/GigList';
 import QuoteCarousel from '../components/QuoteCarousel';
@@ -41,9 +45,9 @@ const HomePage = ({ data }) => {
       <SiteHeader />
       <Nav />
       <div className="content-section">
-        <Video
-          videoSrcURL="https://www.youtube.com/embed/vtYNV56MvxU"
-          videoTitle="The Slacks at the Tractor Tavern in Seattle, WA"
+        <LiteYouTubeEmbed
+          id="vtYNV56MvxU"
+          title="The Slacks playing at the Tractor Tavern in Seattle, WA"
         />
       </div>
       <div id="about" className="content-section">

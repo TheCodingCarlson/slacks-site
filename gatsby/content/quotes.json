@@ -1,29 +1,36 @@
 [
   {
-    "quote": "Voted '425 Magazine's Best Local Band for 2017'"
+    "quote": "Voted '425 Magazine's Best Local Band for 2017'",
+    "color": "#F9AD81"
   },
   {
     "author": "Deanna A. in Arlington, WA",
-    "quote": "They were awesome!"
+    "quote": "They were awesome!",
+    "color": "#8FE4F9"
   },
   {
     "author": "Daimian Esperas in Big Fork, MT",
-    "quote": "The Slacks! Great time and wonderful to work with"
+    "quote": "The Slacks! Great time and wonderful to work with",
+    "color": "#F4F78F"
   },
   {
     "author": "Sandi R. in Bellingham, WA",
-    "quote": "Their list of songs was extensive...we had diverse age groups and everyone enjoyed them"
+    "quote": "Their list of songs was extensive...we had diverse age groups and everyone enjoyed them",
+    "color": "#B0F950"
   },
   {
     "author": "Benay N. in Bainbridge Island, WA",
-    "quote": "I would have no hesitation recommending them to anyone"
+    "quote": "I would have no hesitation recommending them to anyone",
+    "color": "#F9BDEE"
   },
   {
     "author": "Shay B. in Seattle, WA",
-    "quote": "They were amazing and I would hire them again in a heartbeat!!!"
+    "quote": "They were amazing and I would hire them again in a heartbeat!!!",
+    "color": "#F7941E"
   },
   {
     "author": "Jeff Dijulio, Events Coordinator in Seattle, WA",
-    "quote": "Our experience with the Slacks was exceptional"
+    "quote": "Our experience with the Slacks was exceptional",
+    "color": "#BFE8DE"
   }
 ]

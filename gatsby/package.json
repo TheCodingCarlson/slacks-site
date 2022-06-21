@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@browniebroke/gatsby-image-gallery": "^7.0.6",
+    "@fontsource/bebas-neue": "^4.5.7",
     "@fontsource/ribeye": "^4.5.9",
     "@fontsource/varela-round": "^4.5.8",
     "babel-plugin-styled-components": "^2.0.7",
@@ -28,6 +29,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
+    "react-lite-youtube-embed": "^2.2.2",
     "react-slick": "^0.29.0",
     "styled-components": "^5.3.5"
   },

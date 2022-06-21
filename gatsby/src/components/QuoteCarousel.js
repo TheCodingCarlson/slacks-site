@@ -1,15 +1,17 @@
 import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
+import '@fontsource/bebas-neue';
 
 const QuoteStyles = styled.div`
+  font-family: 'Bebas Neue';
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
 
   .quote {
-    font-size: 3rem;
+    font-size: 4.5rem;
     margin: 1rem 0;
   }
 
@@ -31,7 +33,7 @@ const QuoteCarousel = ({ quotes }) => (
   <Slider {...settings}>
     {quotes.map((quote, index) => (
       <div key={`quote-${index + 1}`}>
-        <QuoteStyles>
+        <QuoteStyles style={{ color: quote.color }}>
           <p className="quote">{quote.quote}</p>
           {quote.author !== undefined ? (
             <p className="author"> - {quote.author}</p>
