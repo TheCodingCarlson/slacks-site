@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
-import '@fontsource/bebas-neue';
 
 const QuoteStyles = styled.div`
   font-family: 'Bebas Neue';
@@ -11,8 +10,12 @@ const QuoteStyles = styled.div`
   flex-direction: column;
 
   .quote {
-    font-size: 4.5rem;
+    font-size: 3em;
     margin: 1rem 0;
+
+    @media (min-width: 768px) {
+      font-size: 4.5rem;
+    }
   }
 
   .author {

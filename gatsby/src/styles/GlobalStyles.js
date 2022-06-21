@@ -1,12 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-// Fonts
-import '@fontsource/varela-round';
-import '@fontsource/ribeye';
-
-// React Lite YouTube Embed Styles
-import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
-
 const GlobalStyles = createGlobalStyle`
   :root {
     --orange: #e7942f;
