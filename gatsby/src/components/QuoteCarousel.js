@@ -11,10 +11,11 @@ const QuoteStyles = styled.div`
 
   .quote {
     font-size: 3rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 
     @media (min-width: 768px) {
       font-size: 4.5rem;
+      margin: 1rem 0;
     }
   }
 
