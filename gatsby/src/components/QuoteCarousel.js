@@ -10,7 +10,7 @@ const QuoteStyles = styled.div`
   flex-direction: column;
 
   .quote {
-    font-size: 3em;
+    font-size: 3rem;
     margin: 1rem 0;
 
     @media (min-width: 768px) {

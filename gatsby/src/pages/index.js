@@ -13,9 +13,8 @@ import ContactUsForm from '../components/ContactUsForm';
 import GigList from '../components/GigList';
 import QuoteCarousel from '../components/QuoteCarousel';
 
-// Gig Data
+// Data
 import Gigs from '../../content/gigs.json';
-// Quote Data
 import Quotes from '../../content/quotes.json';
 
 export const pageQuery = graphql`
