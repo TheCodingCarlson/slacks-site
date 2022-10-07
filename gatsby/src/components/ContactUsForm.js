@@ -15,6 +15,10 @@ const ContactUsForm = () => {
       method="post"
       action={process.env.GETFORM_API_ENDPOINT}
     >
+      <div
+        className="g-recaptcha"
+        data-sitekey={process.env.GOOGLE_RECAPTCHA_SITE_KEY}
+      />
       <fieldset>
         <label htmlFor="name">
           Name
