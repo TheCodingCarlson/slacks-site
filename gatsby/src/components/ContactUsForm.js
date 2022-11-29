@@ -15,10 +15,6 @@ const ContactUsForm = () => {
       method="post"
       action={process.env.GETFORM_API_ENDPOINT}
     >
-      <div
-        className="g-recaptcha"
-        data-sitekey={process.env.GOOGLE_RECAPTCHA_SITE_KEY}
-      />
       <fieldset>
         <label htmlFor="name">
           Name
@@ -68,6 +64,7 @@ const ContactUsForm = () => {
           required
         />
       </fieldset>
+      <input type="hidden" name="_gotcha" style={{ display: 'none !important'}} />
       <fieldset>
         <button className="button" type="submit">
           Submit
