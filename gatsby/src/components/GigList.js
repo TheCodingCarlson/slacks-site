@@ -33,7 +33,7 @@ const Gig = ({ gig }) => {
       ) : (
         <span>Public</span>
       )}
-      {gig.eventUrl !== undefined ? (
+      {gig.eventUrl !== undefined && !hasDatePassed(date) ? (
         <a target="_blank" href={gig.eventUrl} rel="noreferrer">
           Go to Event
         </a>
