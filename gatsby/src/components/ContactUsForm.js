@@ -3,10 +3,6 @@ import useForm from '../utils/useForm';
 import ContactUsFormStyles from '../styles/components/ContactUsFormStyles';
 
 const ContactUsForm = () => {
-  const emailsToBlock = [
-    'ericjonesmyemail@gmail.com'
-  ];
-
   const { values, updateValue } = useForm({
     name: '',
     email: '',
