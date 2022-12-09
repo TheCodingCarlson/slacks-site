@@ -3,6 +3,10 @@ import useForm from '../utils/useForm';
 import ContactUsFormStyles from '../styles/components/ContactUsFormStyles';
 
 const ContactUsForm = () => {
+  const emailsToBlock = [
+    'ericjonesmyemail@gmail.com'
+  ];
+
   const { values, updateValue } = useForm({
     name: '',
     email: '',
@@ -10,8 +14,18 @@ const ContactUsForm = () => {
     phone: '',
   });
 
+  const submitForm = (e) => {
+    e.preventDefault();
+
+    if (!process.env.EMAIL_BLOCK_LIST.includes(values.email)) {
+      e.target.submit();
+
+    }
+  }
+
   return (
     <ContactUsFormStyles
+      onSubmit={submitForm}
       method="post"
       action={process.env.GETFORM_API_ENDPOINT}
     >
