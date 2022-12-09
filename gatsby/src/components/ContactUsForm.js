@@ -12,6 +12,7 @@ const ContactUsForm = () => {
 
   const submitForm = (e) => {
     e.preventDefault();
+    console.log(process.env.EMAIL_BLOCK_LIST);
 
     if (!process.env.EMAIL_BLOCK_LIST.includes(values.email)) {
       e.target.submit();
