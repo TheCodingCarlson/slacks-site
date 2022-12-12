@@ -25,6 +25,7 @@ const ContactUsForm = () => {
       onSubmit={submitForm}
       method="post"
       action={process.env.GETFORM_API_ENDPOINT}
+      data-test={process.env.EMAIL_BLOCK_LIST}
     >
       <fieldset>
         <label htmlFor="name">
@@ -66,7 +67,7 @@ const ContactUsForm = () => {
         </label>
       </fieldset>
       <fieldset>
-        <label htmlFor="message">Tell us more about what your event</label>
+        <label htmlFor="message">Tell us more about your event</label>
         <textarea
           id="message"
           name="message"
