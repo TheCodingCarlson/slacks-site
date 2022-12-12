@@ -3,8 +3,6 @@ import useForm from '../utils/useForm';
 import ContactUsFormStyles from '../styles/components/ContactUsFormStyles';
 
 const ContactUsForm = () => {
-  console.log(`EMAIL_BLOCK_LIST: ${process.env.EMAIL_BLOCK_LIST}`);
-
   const { values, updateValue } = useForm({
     name: '',
     email: '',
@@ -15,9 +13,6 @@ const ContactUsForm = () => {
   const submitForm = (e, blockList) => {
     e.preventDefault();
 
-    console.log(e);
-    console.log(blockList);
-
     if (!blockList.includes(values.email)) {
       e.target.submit();
     }
@@ -25,10 +20,9 @@ const ContactUsForm = () => {
 
   return (
     <ContactUsFormStyles
-      onSubmit={submitForm(e, process.env.EMAIL_BLOCK_LIST)}
+      onSubmit={(e) => submitForm(e, process.env.EMAIL_BLOCK_LIST)}
       method="post"
       action={process.env.GETFORM_API_ENDPOINT}
-      data-test={process.env.EMAIL_BLOCK_LIST}
     >
       <fieldset>
         <label htmlFor="name">
