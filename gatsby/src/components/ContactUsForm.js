@@ -3,7 +3,7 @@ import useForm from '../utils/useForm';
 import ContactUsFormStyles from '../styles/components/ContactUsFormStyles';
 
 const ContactUsForm = () => {
-  console.log(process.env.EMAIL_BLOCK_LIST);
+  console.log(`EMAIL_BLOCK_LIST: ${process.env.EMAIL_BLOCK_LIST}`);
 
   const { values, updateValue } = useForm({
     name: '',
@@ -17,7 +17,6 @@ const ContactUsForm = () => {
 
     if (!process.env.EMAIL_BLOCK_LIST.includes(values.email)) {
       e.target.submit();
-
     }
   }
 
