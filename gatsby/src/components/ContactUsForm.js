@@ -10,8 +10,8 @@ const ContactUsForm = () => {
     phone: '',
   });
 
-  console.log(process.env.EMAIL_BLOCK_LIST);
-  console.log(process.env.GETFORM_API_ENDPOINT);
+  console.log(`${process.env.EMAIL_BLOCK_LIST}, ${typeof process.env.EMAIL_BLOCK_LIST}`);
+  console.log(`${process.env.GETFORM_API_ENDPOINT}, ${typeof process.env.GETFORM_API_ENDPOINT}`);
 
   const submitForm = (e) => {
     e.preventDefault();
