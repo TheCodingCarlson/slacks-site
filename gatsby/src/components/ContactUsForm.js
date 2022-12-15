@@ -10,19 +10,22 @@ const ContactUsForm = () => {
     phone: '',
   });
 
-  const submitForm = (e, blockList) => {
+  console.log(process.env.EMAIL_BLOCK_LIST);
+
+  const submitForm = (e) => {
     e.preventDefault();
 
-    if (!blockList.includes(values.email)) {
+    if (!process.env.EMAIL_BLOCK_LIST.includes(values.email)) {
       e.target.submit();
     }
   }
 
   return (
     <ContactUsFormStyles
-      onSubmit={(e) => submitForm(e, process.env.EMAIL_BLOCK_LIST)}
+      onSubmit={submitForm}
       method="post"
       action={process.env.GETFORM_API_ENDPOINT}
+      data-test={process.env.EMAIL_BLOCK_LIST}
     >
       <fieldset>
         <label htmlFor="name">
