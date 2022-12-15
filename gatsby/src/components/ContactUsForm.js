@@ -10,20 +10,19 @@ const ContactUsForm = () => {
     phone: '',
   });
 
-  console.log(`${process.env.EMAIL_BLOCK_LIST}, ${typeof process.env.EMAIL_BLOCK_LIST}`);
-  console.log(`${process.env.GETFORM_API_ENDPOINT}, ${typeof process.env.GETFORM_API_ENDPOINT}`);
-
-  const submitForm = (e) => {
+  const submitForm = (e, blockList) => {
     e.preventDefault();
 
-    if (!process.env.EMAIL_BLOCK_LIST.includes(values.email)) {
+    console.log(blockList);
+
+    if (!blockList.includes(values.email)) {
       e.target.submit();
     }
   }
 
   return (
     <ContactUsFormStyles
-      onSubmit={submitForm}
+      onSubmit={(e) => submitForm(e, process.env.EMAIL_BLOCK_LIST)}
       method="post"
       action={process.env.GETFORM_API_ENDPOINT}
     >
