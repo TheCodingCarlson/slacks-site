@@ -11,6 +11,7 @@ const ContactUsForm = () => {
   });
 
   console.log(process.env.EMAIL_BLOCK_LIST);
+  console.log(process.env.GETFORM_API_ENDPOINT);
 
   const submitForm = (e) => {
     e.preventDefault();
@@ -25,7 +26,6 @@ const ContactUsForm = () => {
       onSubmit={submitForm}
       method="post"
       action={process.env.GETFORM_API_ENDPOINT}
-      data-test={process.env.EMAIL_BLOCK_LIST}
     >
       <fieldset>
         <label htmlFor="name">
