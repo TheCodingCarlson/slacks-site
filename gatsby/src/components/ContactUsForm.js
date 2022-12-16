@@ -15,7 +15,7 @@ const ContactUsForm = () => {
 
     console.log(e.target.dataset.blockList);
 
-    if (!blockList.includes(values.email)) {
+    if (!e.target.dataset.blockList.includes(values.email)) {
       e.target.submit();
     }
   }
